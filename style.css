@@ -1,0 +1,252 @@
+/* ---------------------------------Index.html---------------------------- */
+
+.brand-img {
+    height: 75px;
+}
+
+.navigation-toogle-main-part ul li a {
+    color: rgb(255, 255, 255);
+    float: right;
+    margin-left: 25px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.navigation-toogle-main-part ul li a:hover {
+    border-bottom: 2px solid #15da9f;
+}
+
+.search-bus img {
+    height: 40px;
+    width: auto;
+}
+
+.additional {
+    background-color: rgb(21, 114, 36);
+    color: #e9e5e5;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 300;
+    font-family: Assistant;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+.additional p {
+    color: #ffffff;
+}
+
+.covid-block {
+    background-color: #dbdbdb;
+}
+
+.fa img {
+    height: 100px;
+    width: auto;
+    padding-right: 8px;
+    padding-bottom: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mypricing {
+    background-color: #e0e0e0;
+}
+
+.social-light img {
+    height: 52px;
+    width: 52px;
+    margin-bottom: -6px;
+    margin-left: 0px;
+    padding-left: 4px;
+    margin-top: 2px;
+}
+
+
+/*--------------------------------------Login/signup------------------------------*/
+
+#login-form {
+    display: none;
+}
+
+.tab-group {
+    margin-left: 10%;
+    height: 20px;
+}
+
+.tab-group li {
+    list-style: none;
+    text-align: center;
+    background-color: rgb(11, 65, 0);
+    width: 40%;
+    border: 1px solid rgb(2, 46, 4);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.tab-group li a {
+    color: rgb(255, 255, 255);
+}
+
+.tab-group::after {
+    content: " ";
+    margin-top: 20px;
+}
+
+.tab-content {
+    margin-left: 11.3%;
+    width: 71%;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.596)), url(assets/img/homebackground.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 0px 10px 0px;
+}
+
+.tab-content h1,
+.tab-content p {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.form-label label {
+    width: 100%;
+    margin-left: 30%;
+}
+
+.form-label,
+.form-label label,
+.form-label input {
+    margin-top: 10px;
+}
+
+input[name=email],
+input[name=psw],
+input[name=psw-repeat] {
+    width: 70%;
+}
+
+.form-button {
+    margin: 0px 0px 5px 50px;
+}
+
+.form-button button {
+    padding: 5px 100px;
+    margin-left: 60px;
+    background-color: rgb(61, 160, 226);
+    border-radius: 5px;
+    border: 1px solid rgb(61, 160, 226);
+}
+
+.container {
+    position: relative;
+}
+
+input,
+.btn {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+input:hover,
+.btn:hover {
+    opacity: 1;
+}
+
+.fb {
+    background-color: #3B5998;
+    color: white;
+}
+
+.twitter {
+    background-color: #55ACEE;
+    color: white;
+}
+
+.google {
+    background-color: #dd4b39;
+    color: white;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.col {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.vl {
+    position: absolute;
+    left: 47%;
+    top: 45%;
+    transform: translate(-50%);
+    border: 2px solid #ddd;
+    height: 175px;
+}
+
+.vl-innertext {
+    position: absolute;
+    top: 49%;
+    transform: translate(-50%, -50%);
+    background-color: #3a3a3a;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 7px 10px;
+}
+
+.hide-md-lg {
+    display: none;
+}
+
+.login-form {
+    margin-left: 117px;
+    padding: 0px -2px 10px 6px;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-form form div hr {
+    width: 96.5%;
+    margin-right: 14.5px;
+    padding-bottom: 50px;
+    color: #ffffff;
+}
+
+.mian-btn-nav {
+    width: 100%;
+    padding: 5px 10px;
+    background-color: rgb(11, 65, 0);
+    color: #fff;
+    border: none;
+}
+
+.myrowmain {
+    display: inline-block;
+}
