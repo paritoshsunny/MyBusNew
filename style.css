@@ -1,5 +1,4 @@
 /* ---------------------------------Index.html---------------------------- */
-
 .brand-img {
     height: 75px;
 }
@@ -64,9 +63,7 @@
     margin-top: 2px;
 }
 
-
-/*--------------------------------------Login/signup------------------------------*/
-
+/* --------------------------------------Login/signup------------------------------ */
 #login-form {
     display: none;
 }
@@ -126,7 +123,6 @@
 input[name=email],
 input[name=psw],
 input[name=psw-repeat] {
-    width: 70%;
 }
 
 .form-button {
