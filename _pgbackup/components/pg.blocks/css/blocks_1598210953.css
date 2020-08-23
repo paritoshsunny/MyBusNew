@@ -2431,7 +2431,6 @@ Version: 1.0 */
 /*---------------------------------------------------- */
 .team-2 .team-wrapper {
     padding-bottom: 25px;
-    margin-left: 73px;
 }
 
 .team-2 .team-wrapper .team-item {
@@ -2450,10 +2449,7 @@ Version: 1.0 */
 .team-2 .team-wrapper .team-item .team-thumb img {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    width: 90%;
-    margin-bottom: 10px;
-    height: auto;
-    padding: 30px;
+    width: 100%;
 }
 
 .team-2 .team-wrapper .team-item:hover .team-thumb img {

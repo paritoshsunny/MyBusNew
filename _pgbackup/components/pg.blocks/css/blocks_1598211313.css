@@ -2451,9 +2451,7 @@ Version: 1.0 */
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     width: 90%;
-    margin-bottom: 10px;
-    height: auto;
-    padding: 30px;
+    margin-bottom: 42px;
 }
 
 .team-2 .team-wrapper .team-item:hover .team-thumb img {

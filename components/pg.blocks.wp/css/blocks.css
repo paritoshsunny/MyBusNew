@@ -851,6 +851,7 @@ Version: 1.0 */
 /*---------------------------------------------------- */
 .content-1-6 h2 {
     margin-bottom: 40px !important;
+    margin-left: -2px;
 }
 
 .content-1-6 .client-row {
