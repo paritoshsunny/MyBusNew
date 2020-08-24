@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Gallery</title>
+        <title>Dashboard</title>
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
         <!-- Custom styles for this template -->
@@ -16,27 +16,6 @@
         <link rel="stylesheet" href="components/pg.blocks.wp/css/style-library-1.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
-        <link rel="stylesheet" href="components/pg.blocks/css/blocks.css">
-        <link rel="stylesheet" href="components/pg.blocks/css/plugins.css">
-        <link rel="stylesheet" href="components/pg.blocks/css/style-library-1.css">
-        <script>
-        /* Pinegrow Interactions, do not remove */
-        try {
-            if (!document.documentElement.hasAttribute('data-pg-ia-disabled')) {
-                var style = document.createElement('style');
-                var pgcss = 'html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';
-                if (document.documentElement.hasAttribute('data-pg-id') ? document.documentElement.hasAttribute('data-pg-mobile') : (screen.width < 1000 && screen.height < 1000)) {
-                    pgcss += 'html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';
-                } else {
-                    pgcss += 'html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';
-                }
-                style.innerHTML = pgcss;
-                document.querySelector('head').appendChild(style);
-            }
-        } catch (e) {
-            console && console.log(e);
-        }
-    </script>
     </head>
     <body>
         <div class="container">
@@ -77,42 +56,35 @@
                 <!-- /.container-fluid -->
             </nav>
         </header>
-        <section id="content-1-6" class="content-1-6 content-block" wp-cz-section="blocks_content_1_6" wp-cz-section-title="Content 1-6" wp-cz-control="blocks_content_1_6_source" wp-cz-control-label="Content source" wp-cz-control-type="custom" wp-cz-control-type-custom="WP_BlocksContentDropdown_Customize_Control" wp-cz-control-section="blocks_content_1_6"> 
+        <section class="content-block team-2 team-2-2">
             <div class="container">
-                <div class="row text-center">
-                    <h2 wp-cz-control="blocks_content_1_6_title" wp-cz-control-label="Title" wp-cz-control-section="blocks_content_1_6" wp-cz-theme-mod="blocks_content_1_6_title">Some of our great partners</h2>
+                <div class="underlined-title">
+                    <h1>Deshboard</h1>
+                    <hr>
                 </div>
-                <!--end of row-->
-                <div class="row client-row" wp-loop="clients" wp-loop-post_parent="get_theme_mod('blocks_content_1_6_source')" wp-loop-post-type-custom="blocks_content" wp-loop-post-status="publish" wp-loop-nopaging="true" wp-loop-order="ASC" wp-loop-orderby="menu_order" wp-loop-show-items="4" wp-loop-show-empty-text="false">
-                    <div class="row-wrapper">
-                        <div class="col-md-3 col-sm-6 col-xs-12" wp-loop-item>
-                            <img alt="client" src="images/partner-logos/logo-bootstrap.png" wp-the-post-thumbnail="medium" wp-the-post-thumbnail-attr-alt="Client">
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12" wp-loop-skip>
-                            <img alt="client" src="images/partner-logos/logo-less.png">
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12" wp-loop-skip>
-                            <img alt="client" src="images/partner-logos/logo-sass.png">
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12" wp-loop-skip>
-                            <img alt="client" src="images/partner-logos/logo-jquery.png">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 team-wrapper" wp-loop="blocks" wp-loop-clear-columns wp-loop-post_parent="get_theme_mod('blocks_team_2_2_source')" wp-loop-post-type-custom="blocks_content" wp-loop-post-status="publish" wp-loop-nopaging="true" wp-loop-order="ASC" wp-loop-orderby="menu_order" style="margin-left: 158px;">
+                        <div class="team-item" style="margin-left: -11px; padding-left: 0px;">
+                            <div class="team-thumb">
+                                <img src="assets/img/myprofile.png" class="img-responsive" alt="Member Image" wp-the-post-thumbnail="large">
+                                <h4>Profile</h4>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- /.row -->
-                <div class="row client-row" wp-loop="clients" wp-loop-show-items="4" wp-loop-show-empty-text="false" wp-loop-continue="true">
-                    <div class="row-wrapper">
-                        <div class="col-md-3 hidden-sm hidden-xs" wp-loop-item>
-                            <img alt="client" src="images/partner-logos/logo-grunt.png" wp-the-post-thumbnail="medium" wp-the-post-thumbnail-attr-alt="Client">
+                    <div class="col-md-3 col-sm-6 col-xs-12 team-wrapper" wp-loop-skip>
+                        <div class="team-item">
+                            <div class="team-thumb">
+                                <img src="assets/img/mybookings.png" class="img-responsive" alt="Member Image">
+                                <h4>My Bookings</h4>
+                            </div>
                         </div>
-                        <div class="col-md-3 hidden-sm hidden-xs" wp-loop-skip>
-                            <img alt="client" src="images/partner-logos/logo-bower.png">
-                        </div>
-                        <div class="col-md-3 hidden-sm hidden-xs" wp-loop-skip>
-                            <img alt="client" src="images/partner-logos/logo-yeoman.png">
-                        </div>
-                        <div class="col-md-3 hidden-sm hidden-xs" wp-loop-skip>
-                            <img alt="client" src="images/partner-logos/logo-angularjs.png">
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 team-wrapper" wp-loop-skip>
+                        <div class="team-item">
+                            <div class="team-thumb">
+                                <img src="assets/img/tracking.png" class="img-responsive" alt="Member Image">
+                                <h4>Track Your Bus</h4>
+                            </div>
                         </div>
                     </div>
                 </div>

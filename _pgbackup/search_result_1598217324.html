@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Dashboard</title>
+        <title>Search-Results</title>
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
         <!-- Custom styles for this template -->
@@ -16,13 +16,22 @@
         <link rel="stylesheet" href="components/pg.blocks.wp/css/style-library-1.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+        <link rel="stylesheet" href="components/pg.blocks/css/blocks.css">
+        <link rel="stylesheet" href="components/pg.blocks/css/plugins.css">
+        <link rel="stylesheet" href="components/pg.blocks/css/style-library-1.css">
     </head>
     <body>
-        <div class="container">
-</div>
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="components/pg.blocks.wp/js/plugins.js"></script>
+        <script type="text/javascript" src="components/pg.blocks.wp/js/bskit-scripts.js"></script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+        <script type="text/javascript" src="components/pg.blocks/js/plugins.js"></script>
+        <script type="text/javascript" src="components/pg.blocks/js/bskit-scripts.js"></script>
         <header id="header-2" class="header-2 soft-scroll" wp-cz-section="blocks_header_2" wp-cz-section-title="Header 2" style="margin-left: -13px; padding-left: 0px; width: 100%;">
             <nav class="main-nav navbar navbar-default navbar-fixed-top" style="padding: 0px; margin: -30px -14px -16px -16px; background-color: #ededed; background: -webkit-radial-gradient(right center, rgb(22, 34, 42) 0%, rgb(58, 96, 115) 100%);">
                 <div class="container-fluid" style="margin-right: 36px; margin-left: 61px; margin-bottom: -31px;">
@@ -56,45 +65,48 @@
                 <!-- /.container-fluid -->
             </nav>
         </header>
-        <section class="content-block team-2 team-2-2">
-            <div class="container">
-                <div class="underlined-title">
-                    <h1>Deshboard</h1>
-                    <hr>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-12 team-wrapper" wp-loop="blocks" wp-loop-clear-columns wp-loop-post_parent="get_theme_mod('blocks_team_2_2_source')" wp-loop-post-type-custom="blocks_content" wp-loop-post-status="publish" wp-loop-nopaging="true" wp-loop-order="ASC" wp-loop-orderby="menu_order" style="margin-left: 71px;">
-                        <div class="team-item" style="margin-left: -11px; padding-left: 0px;">
-                            <div class="team-thumb">
-                                <img src="assets/img/myprofile.png" class="img-responsive" alt="Member Image" wp-the-post-thumbnail="large" style="margin: 15px; padding: 0px; width: 216px; height: auto;">
-                                <h4 style="text-align: center;">Profile</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 team-wrapper" wp-loop-skip style="margin-left: 72px; margin-right: 72px;">
-                        <div class="team-item">
-                            <div class="team-thumb">
-                                <img src="assets/img/mybookings.png" class="img-responsive" alt="Member Image" style="margin: 15px; width: 216px; height: auto;">
-                                <h4 style="text-align: center;">My Bookings</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 team-wrapper" wp-loop-skip>
-                        <div class="team-item">
-                            <div class="team-thumb">
-                                <img src="assets/img/tracking.png" class="img-responsive" alt="Member Image" style="margin: 15px; width: 216px; height: auto;">
-                                <h4 style="text-align: center;">Track Your Bus</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
+        <div style="margin-top: 29px;">
+            <div class="row container">
+                <h3 style="margin-left: 52px;">Available Buses</h3>
             </div>
-            <!-- /.container -->
-        </section>
+            <table class=" container table">
+                <thead>
+                    <tr>
+                        <th>Traveller</th>
+                        <th>Departure Time</th>
+                        <th>Arrival Time</th>
+                        <th>Duration</th>
+                        <th>Price</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gujarat travels</td>
+                        <td>10:00 PM</td>
+                        <td>6:00 AM</td>
+                        <td>8 hrs</td>
+                        <td>INR 1600</td>
+                        <button type="button" class="btn btn-light" style="margin-top: -2px;">Label</button>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <section class="bg-deepocean content-block-nopad footer-wrap-1-4">
             <div class="container footer-1-4">
-                <h2>Get notified when we are ready to <strong>launch</strong></h2>
+                <h2 style="margin-top: 22px;">Get notified when we are ready to <strong>launch</strong></h2>
                 <p class="lead"><a href="#">Subscribe for latest updates</a></p>
                 <form class="footer-form" action="#">
                     <input type="email" name="" value="" placeholder="Your Email" required>
@@ -118,14 +130,6 @@
             </div>
             <!-- /.container -->
         </section>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/popper.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="components/pg.blocks.wp/js/plugins.js"></script>
-        <script type="text/javascript" src="components/pg.blocks.wp/js/bskit-scripts.js"></script>
-        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
-        <script type="text/javascript" src="components/pg.blocks/js/plugins.js"></script>
-        <script type="text/javascript" src="components/pg.blocks/js/bskit-scripts.js"></script>
         <script type="text/javascript" src="pgia/lib/pgia.js"></script>
     </body>
 </html>
