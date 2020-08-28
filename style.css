@@ -1,4 +1,5 @@
 /* ---------------------------------Index.html---------------------------- */
+
 .brand-img {
     height: 75px;
 }
@@ -46,9 +47,6 @@
     padding-bottom: 10px;
 }
 
-.text-center {
-}
-
 .mypricing {
     background-color: #e0e0e0;
 }
@@ -62,7 +60,9 @@
     margin-top: 2px;
 }
 
+
 /* --------------------------------------Login/signup------------------------------ */
+
 #login-form {
     display: none;
 }
@@ -117,11 +117,6 @@
 .form-label label,
 .form-label input {
     margin-top: 10px;
-}
-
-input[name=email],
-input[name=psw],
-input[name=psw-repeat] {
 }
 
 .form-button {
