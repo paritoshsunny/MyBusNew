@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="components/pg.blocks.wp/css/style-library-1.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
 </head>
 
 <body style="width: 100%;">
@@ -57,13 +59,13 @@
         <h1 style="margin-left: 322px; margin-top: -136px; color: #ffffff; font-weight: 400; letter-spacing: 5px;">Book your ride and enjoy the life</h1>
         <div class="search-bus" style="top: 34px; margin-top: -94px; padding-top: 253px; padding-left: 218px;">
             <img src="assets/img/building.svg" style="padding-bottom: 8px; margin-bottom: -4px;">
-            <input type="text" class="search-form" placeholder="FROM" required style="padding-left: 11px; height: 31px;">
+            <input type="text" class="search-form" id="from" placeholder="FROM" required style="padding-left: 11px; height: 31px;">
             <img src="assets/img/school-bus.svg" id="busimage" style="margin-left: 6px; margin-right: 6px;">
             <img src="assets/img/building.svg" style="padding-bottom: 8px; margin-bottom: -4px;">
-            <input type="text" class="search-form" placeholder="TO" required style="width: 180; height: 31px;">
+            <input type="text" class="search-form" id="to" placeholder="TO" required style="width: 180; height: 31px;">
             <img src="assets/img/calendar.svg" style="padding-bottom: 8px; margin-bottom: -4px;">
-            <input type="date" style="width: 180; height: 31px;">
-            <input type="button" class="search-form" value="Search" id="searchbtn" style="padding-right: 50px; padding-left: 40px; height: 31px; margin-top: 3px; padding-top: 6px;">
+            <input type="date" id="date" style="width: 180; height: 31px;">
+            <input type="button" class="search-form searchbtn" value="Search" id="searchbtn" style="padding-right: 50px; padding-left: 40px; height: 31px; margin-top: 3px; padding-top: 6px;">
 
         </div>
     </section>
@@ -75,17 +77,27 @@
             </div>
         </div>
     </section>
+    <section>
+
+    </section>
 
     <section>
-        <div id="mysearch">
+        <div id="mysearch" class="container">
             <table class="table table-dark">
-                <thead>
-
-                </thead>
-                <tbody>
-                    <tr id="buses">
-
+                <thead id="tablehead">
+                    <tr>
+                        <th scope="col">Form</th>
+                        <th scope="col">TO</th>
+                        <th scope="col">Departure Time</th>
+                        <th scope="col">Arrival Time</th>
+                        <th scope="col">Duration</th>
+                        <th scope="col">Traveller</th>
+                        <th scope="col">Price</th>
+                        <th scope="col" style="width: 150px;">&nbsp;</th>
                     </tr>
+                </thead>
+                <tbody id="buses">
+
                 </tbody>
             </table>
         </div>
@@ -275,30 +287,15 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="searchbus.js"></script>
+    <script src="srchbus.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+
 
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyCXrwru1EaD_Rqa0jElMb0g5xgseEgzoZU",
-            authDomain: "my-bus-286122.firebaseapp.com",
-            databaseURL: "https://my-bus-286122.firebaseio.com",
-            projectId: "my-bus-286122",
-            storageBucket: "my-bus-286122.appspot.com",
-            messagingSenderId: "463999014833",
-            appId: "1:463999014833:web:74234eef5d9b855c1b4f90",
-            measurementId: "G-2CVL3DR85P"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-    </script>
+
 </body>
 
 </html>

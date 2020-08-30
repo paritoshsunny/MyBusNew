@@ -4,15 +4,7 @@ $(function() {
     var $useremail = $('#useremail');
     var $userpassword = $('#userpassword');
 
-    $.ajax({
-        type: 'GET',
-        url: 'https://us-central1-my-bus-286122.cloudfunctions.net/app/api/read',
-        success: function(buses) {
-            $.each(buses, function(i, bus) {
-                $buses.append('<li>my buses</li>')
-            });
-        }
-    });
+
 
     $('#signupbtn').on('click', function() {
         function randomNumber(min, max) {
@@ -40,5 +32,7 @@ $(function() {
                 alert('Something wrong happen. Please try again.')
             }
         })
+
     });
+
 });
