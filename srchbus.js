@@ -17,6 +17,9 @@ const db = firebase.firestore();
 
 const busList = document.querySelector('#buses');
 const searchbtn = document.querySelector('#searchbtn');
+const busfrom = document.querySelector('#from');
+const busto = document.querySelector('#to');
+
 
 function renderHTML(doc) {
     let tr = document.createElement('tr');
@@ -64,6 +67,7 @@ searchbtn.addEventListener('click', (e) => {
     $('.home3').hide();
 
     db.collection('bus').get().then((snapshot) => {
+
         snapshot.docs.forEach(doc => {
             renderHTML(doc);
         })
